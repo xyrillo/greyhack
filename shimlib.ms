@@ -1,3 +1,17 @@
+//This is a generic library of functions to be imported and used elsewhere//
+//26MAY2024
+//Added functions:
+//	chomp - clears leading and trailing whitespace
+//	listToMap - converts list types to map types, splits on demarc or default of " "
+//  markupGetList - returns list of hits for queried nest path
+//	markupGetString - same as GetList, but returns a string
+//	markupAdd - adds fields to specified path
+//	markupFormat - does the indents pretty, returns string, good for writes
+//	fileRead - returns text contents of file, does lots of checks for path and perms
+//	fileWrite - writes string to file after checks and perms
+//markup files should look like [field1] [f2] [/f2] [/field]
+
+
 chomp = function(string)
 //Strips whateChars from start and end of any string passed, returns string.
 	if string.len < 1 then return string
